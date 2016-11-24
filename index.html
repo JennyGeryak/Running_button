@@ -5,20 +5,18 @@
 	<title>Running_button</title>
 </head>
 <body>
-<div id="running_button"></div>
+<div id="task"></div>
 <script type="text/javascript">  
 function runButton (){
 	var task=document.getElementById("task");
-		var tool_bar=document.createElement("div");
-		document.body.appendChild(tool_bar);
-		var button=document.createElement("button");
-		tool_bar.appendChild(button);
-		button.appendChild(document.createTextNode('+'));
-		console.dir(button);
-	button.onmouseover = function (min, max) {
-		return Math.random() * (max - min) + min;
-		
-
+	var button=document.createElement("button");
+	task.appendChild(button);
+	button.appendChild(document.createTextNode('catch me!'));
+	console.dir(button);
+	button.onmouseover = function () {
+		 console.log(Math.random()*100);
+		 button.style.marginLeft = (Math.random()*500)+'px';
+		 button.style.marginTop = (Math.random()*500)+'px';
  	}
 }
 
