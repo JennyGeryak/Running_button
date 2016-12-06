@@ -1,6 +1,6 @@
 # Running_button
 ## "Catch me" button
-*JS practise*
+*JS practise:*
 * functions
 * events
 * randomizer
